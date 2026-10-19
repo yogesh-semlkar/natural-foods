@@ -1,0 +1,38 @@
+[
+  {
+    "id": "CUST-684904",
+    "createdAt": "2026-10-19T11:51:41.840Z",
+    "savedAddresses": [
+      {
+        "id": "addr-1792410701839",
+        "label": "Home",
+        "address": "Flat 501, Sun City Heights",
+        "city": "New Delhi",
+        "state": "Delhi",
+        "pincode": "110001"
+      }
+    ],
+    "name": "Rohan Verma",
+    "phone": "9876543210",
+    "email": "rohan@gmail.com",
+    "password": "secretpassword"
+  },
+  {
+    "id": "CUST-732792",
+    "createdAt": "2026-10-19T11:56:55.668Z",
+    "savedAddresses": [
+      {
+        "id": "addr-1792411015666",
+        "label": "Home",
+        "address": "Jamapati",
+        "city": "Local",
+        "state": "India",
+        "pincode": "110001"
+      }
+    ],
+    "name": "Yogesh Semlkar",
+    "phone": "6264801316",
+    "email": "yogeshsemlkar0922@gmail.co",
+    "password": "123456"
+  }
+]

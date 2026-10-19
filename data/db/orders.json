@@ -1,0 +1,138 @@
+[
+  {
+    "orderId": "PKP-286402",
+    "createdAt": "2026-10-19T12:02:20.275Z",
+    "status": "Confirmed",
+    "customer": {
+      "fullName": "Yogesh Semlkar",
+      "phone": "6264801316",
+      "email": "yogeshsemlkar0922@gmail.co",
+      "address": "Jamapati",
+      "city": "Local",
+      "state": "India",
+      "pincode": "110001"
+    },
+    "items": [
+      {
+        "productId": "atta-01",
+        "name": "Stone-Ground Organic Multigrain Atta",
+        "hindiName": "पत्थर चक्की शुद्ध मल्टीग्रेन आटा",
+        "image": "/images/multigrain-atta.jpg",
+        "category": "atta",
+        "weight": "1 kg",
+        "price": 95,
+        "originalPrice": 110,
+        "quantity": 1
+      }
+    ],
+    "totals": {
+      "count": 1,
+      "subtotal": 95,
+      "savings": 15,
+      "couponDiscount": 0,
+      "shippingFee": 60,
+      "total": 155,
+      "amountNeededForFreeShipping": 704,
+      "shippingProgress": 12
+    },
+    "paymentMethod": "Online UPI (GPay/PhonePe)"
+  },
+  {
+    "orderId": "PKP-794119",
+    "createdAt": "2026-10-19T11:52:03.493Z",
+    "status": "Confirmed",
+    "customer": {
+      "city": "New Delhi",
+      "fullName": "Rohan Verma",
+      "phone": "9876543210",
+      "pincode": "110001",
+      "email": "rohan@gmail.com",
+      "state": "Delhi",
+      "address": "Flat 501, Sun City Heights"
+    },
+    "items": [
+      {
+        "price": 445,
+        "weight": "5 kg",
+        "quantity": 2,
+        "productId": "atta-01",
+        "name": "Stone-Ground Organic Multigrain Atta"
+      }
+    ],
+    "totals": {
+      "subtotal": 890,
+      "shippingFee": 0,
+      "couponDiscount": 89,
+      "total": 801
+    },
+    "paymentMethod": "Online UPI"
+  },
+  {
+    "orderId": "PKP-305006",
+    "createdAt": "2026-10-19T11:31:58.679Z",
+    "status": "Confirmed",
+    "customer": {
+      "fullName": "Yogi",
+      "phone": "9893879047",
+      "email": "divyanshjitpure@gmail.com",
+      "address": "athner",
+      "pincode": "460110",
+      "city": "Regional Hub",
+      "state": "India"
+    },
+    "items": [
+      {
+        "productId": "oil-01",
+        "name": "Wood-Pressed Yellow Mustard Oil (Kachi Ghani)",
+        "hindiName": "लकड़ी घानी पीली सरसों का शुद्ध तेल",
+        "image": "/images/cold-pressed-oil.jpg",
+        "category": "oils",
+        "weight": "500 ml",
+        "price": 185,
+        "originalPrice": 210,
+        "quantity": 1
+      }
+    ],
+    "totals": {
+      "count": 1,
+      "subtotal": 185,
+      "savings": 25,
+      "couponDiscount": 0,
+      "shippingFee": 60,
+      "total": 245,
+      "amountNeededForFreeShipping": 614,
+      "shippingProgress": 23
+    },
+    "paymentMethod": "Online UPI (GPay/PhonePe)"
+  },
+  {
+    "orderId": "PKP-125504",
+    "createdAt": "2026-10-19T11:12:22.275Z",
+    "status": "Confirmed",
+    "customer": {
+      "city": "New Delhi",
+      "fullName": "Vikram Aditya",
+      "phone": "9811223344",
+      "pincode": "110001",
+      "email": "vikram@example.com",
+      "state": "Delhi",
+      "address": "House 12, Heritage Enclave"
+    },
+    "items": [
+      {
+        "price": 1699,
+        "weight": "1 Litre",
+        "quantity": 1,
+        "productId": "ghee-01",
+        "name": "A2 Bilona Desi Cow Ghee (Gir Cow)"
+      }
+    ],
+    "totals": {
+      "subtotal": 1699,
+      "shippingFee": 0,
+      "couponDiscount": 0,
+      "total": 1699
+    },
+    "paymentMethod": "Online UPI"
+  }
+]

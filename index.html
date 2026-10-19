@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="hi-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prakriti Pure - 100% Shuddh & Natural Food Supplies | Desi Ghee, Multigrain Atta, Organic Pulses</title>
+  <meta name="description" content="Shop 100% pure traditional natural food supplies: Vedic A2 Bilona Desi Ghee, Stone-ground Multigrain Atta, Unpolished Pulses, and Cold-pressed Oils. Direct from farm to kitchen.">
+  <meta name="keywords" content="organic food, multigrain atta, a2 desi ghee, bilona ghee, unpolished pulses, cold pressed mustard oil, natural sweeteners, farm fresh india">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Prakriti Pure - Authentic Natural & Organic Foods">
+  <meta property="og:description" content="Pure, traditional, chemical-free food supplies delivered fresh across India.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon & Stylesheet -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <aside class="announcement-bar" role="region" aria-label="Announcement">
+    <span>🌿 <strong>100% Certified Organic & Lab Tested</strong> • Free Express Delivery across India on orders over ₹799!</span>
+    <span class="badge-pill">Code: SHUDDH10 (10% OFF)</span>
+  </aside>
+
+  <!-- Sticky Site Header -->
+  <header class="site-header" id="site-header">
+    <div class="container nav-wrapper">
+      
+      <!-- Logo -->
+      <a href="#" class="brand-logo" aria-label="Prakriti Pure Home">
+        <div class="brand-icon">🌱</div>
+        <div class="brand-text">
+          <h1 class="store-brand-name">Prakriti Pure</h1>
+          <span>100% Natural & Organic</span>
+        </div>
+      </a>
+
+      <!-- Instant Search -->
+      <div class="header-search">
+        <div class="search-input-wrap">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="search-input" placeholder="Search Desi Ghee, Multigrain Atta, Dals..." aria-label="Search products">
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="header-actions">
+        <button type="button" class="pincode-btn" onclick="promptCheckPincode()" title="Check Delivery Pincode">
+          <span>📍</span>
+          <span>Check Pincode</span>
+        </button>
+
+        <button type="button" class="admin-link-btn" onclick="openAdminModal()" title="Founder Admin Panel">
+          <span>⚙️ Founder Admin</span>
+        </button>
+
+        <button type="button" class="cart-btn" id="cart-toggle-btn" aria-label="View Shopping Cart">
+          <span>🛒</span>
+          <span class="cart-count">0</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    
+    <!-- Hero Banner Section -->
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-banner">
+          <img src="assets/images/hero-farm.jpg" alt="Organic Indian Farm with Golden Harvest" class="hero-bg-img">
+          <div class="hero-overlay"></div>
+          
+          <div class="hero-content">
+            <span class="hero-tag">🌾 Farm-To-Kitchen Direct</span>
+            <h2 class="hero-title">Shuddh. Poshtik. <em>Asli Swad.</em> Khet Se Seedhe Rasoi Tak.</h2>
+            <p class="hero-description">
+              Chemical aur adulteration se door, Vedic Bilona method se bana A2 Desi Cow Ghee, pathar chakkhi ka Multigrain Atta, aur bina polish ki daalein. Aapke parivar ki sehat ke liye 100% shuddh.
+            </p>
+            <div class="hero-cta-group">
+              <a href="#shop-now" class="btn-primary">
+                <span>🛒 Shop Fresh Harvest</span>
+              </a>
+              <a href="#purity-story" class="btn-secondary">
+                <span>🌾 Our Purity Story</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Trust Badges Strip -->
+        <div class="trust-strip">
+          <div class="trust-item">
+            <div class="trust-icon">🥛</div>
+            <div class="trust-info">
+              <h4>Vedic Bilona Ghee</h4>
+              <p>Gir cow curd hand-churned in wooden bilona at sunrise</p>
+            </div>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-icon">⚙️</div>
+            <div class="trust-info">
+              <h4>Stone-Ground Atta</h4>
+              <p>Slow cold-chakkhi grinding keeps natural wheat germ & fiber</p>
+            </div>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-icon">🥣</div>
+            <div class="trust-info">
+              <h4>Unpolished Pulses</h4>
+              <p>Zero leather or oil polish. Pure native protein & nutrients</p>
+            </div>
+          </div>
+
+          <div class="trust-item">
+            <div class="trust-icon">🚚</div>
+            <div class="trust-info">
+              <h4>Pan-India Delivery</h4>
+              <p>Fresh batch packed in eco-friendly glass & kraft paper</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Shop & Products Section -->
+    <section class="shop-section" id="shop-now">
+      <div class="container">
+        
+        <div class="section-head">
+          <span class="section-tag">Pure Food Catalog</span>
+          <h2 class="section-title">Khet Ka Taaza Khazana</h2>
+          <p class="section-subtitle">Chunein shuddh desi atta, a2 ghee, bina polish ki daalein aur lakdi ghani tel.</p>
+        </div>
+
+        <!-- Filter & Sort Bar -->
+        <div class="filter-bar-wrapper">
+          <div class="category-tabs" role="tablist">
+            <button type="button" class="cat-tab active" data-category="all">🌱 Sabhi Products</button>
+            <button type="button" class="cat-tab" data-category="ghee">🍯 A2 Desi Ghee</button>
+            <button type="button" class="cat-tab" data-category="atta">🌾 Multigrain & Atta</button>
+            <button type="button" class="cat-tab" data-category="pulses">🥣 Unpolished Pulses</button>
+            <button type="button" class="cat-tab" data-category="oils">🫒 Wood-Pressed Oils</button>
+            <button type="button" class="cat-tab" data-category="sweeteners">🍯 Honey & Khand</button>
+          </div>
+
+          <div class="sort-wrapper">
+            <label for="sort-select">Sort By:</label>
+            <select id="sort-select" class="sort-select">
+              <option value="popular">Most Popular</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="rating">Highest Rated</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid" id="products-grid">
+          <!-- Dynamically populated by js/app.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Traditional Process & Purity Story -->
+    <section class="story-section" id="purity-story">
+      <div class="container">
+        <div class="story-grid">
+          
+          <div class="story-content">
+            <span class="section-tag">Authentic Vedic Process</span>
+            <h2>Bazaru Adulteration Vs Asli Shuddh Prakriti</h2>
+            <p>
+              Market me milne wala 90% ghee factory me bache hue butter ko boil karke banta hai jisme koi poshan nahi hota. Humare yahan har ek step 5,000 saal purane Vedic niyam ke anusaar hota hai:
+            </p>
+
+            <div class="process-steps">
+              <div class="step-card">
+                <div class="step-num">1</div>
+                <div class="step-info">
+                  <h4>Desi Gir Cow A2 Milk</h4>
+                  <p>Khule khet me charne wali Gir gaay ka taaza A2 doodh mitti ke bartano me ubhaala jata hai.</p>
+                </div>
+              </div>
+
+              <div class="step-card">
+                <div class="step-num">2</div>
+                <div class="step-info">
+                  <h4>Whole Curd Wooden Bilona Churning</h4>
+                  <p>Subah Brahma Muhurta me lakdi ke bilona se dahi ko chhaachh aur makkhan me alag kiya jata hai.</p>
+                </div>
+              </div>
+
+              <div class="step-card">
+                <div class="step-num">3</div>
+                <div class="step-info">
+                  <h4>Slow Simmered on Low Flame</h4>
+                  <p>Taaza makkhan ko dheemi aanch par kadd kar danedaar, sugandhit aur sunhera shuddh ghee taiyar hota hai.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="story-visual-card">
+            <img src="assets/images/desi-ghee.jpg" alt="Pure Vedic A2 Desi Cow Ghee" class="story-img">
+            <div class="purity-badge-floating">
+              <div class="badge-col">
+                <h5>100% Purity</h5>
+                <span>Lab Certified & FSSAI Compliant</span>
+              </div>
+              <div class="badge-col" style="text-align:right;">
+                <h5>Zero Chemicals</h5>
+                <span>No Artificial Fragrance / Colors</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Reviews / Testimonials -->
+    <section style="padding: 70px 0; background: var(--bg-sand);">
+      <div class="container">
+        <div class="section-head">
+          <span class="section-tag">Customer Love</span>
+          <h2 class="section-title">Kareeb 10,000+ Parivaron Ka Bharosa</h2>
+          <p class="section-subtitle">Janein Bharat bhar ke grahak hamare shuddh anaj aur desi ghee ke baare me kya keh rahe hain.</p>
+        </div>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:24px;">
+          
+          <div style="background:var(--surface-card); padding:24px; border-radius:var(--radius-md); border:1px solid var(--surface-border); box-shadow:var(--shadow-sm);">
+            <div style="color:var(--accent-warm); margin-bottom:8px; font-size:1.1rem;">★★★★★</div>
+            <p style="font-size:0.92rem; color:var(--text-body); margin-bottom:16px; line-height:1.5;">
+              "Maine pehli baar inka Multigrain Atta order kiya tha. Rotiyan itni mulayam banti hain aur pet me koi bhaari-pan nahi lagta. Puraane zamane ke swad ki yaad aa gayi!"
+            </p>
+            <div style="display:flex; align-items:center; gap:12px;">
+              <div style="width:40px; height:40px; border-radius:50%; background:var(--primary-100); color:var(--primary-800); display:flex; align-items:center; justify-content:center; font-weight:700;">RS</div>
+              <div>
+                <strong style="font-size:0.9rem;">Rajesh Sharma</strong><br>
+                <small style="color:var(--text-muted);">Verified Buyer • New Delhi</small>
+              </div>
+            </div>
+          </div>
+
+          <div style="background:var(--surface-card); padding:24px; border-radius:var(--radius-md); border:1px solid var(--surface-border); box-shadow:var(--shadow-sm);">
+            <div style="color:var(--accent-warm); margin-bottom:8px; font-size:1.1rem;">★★★★★</div>
+            <p style="font-size:0.92rem; color:var(--text-body); margin-bottom:16px; line-height:1.5;">
+              "A2 Bilona Ghee ka aroma kholte hi kitchen me mehak jata hai. Danedaar texture hai aur daal me ek chammach daalte hi swad 10 guna badh jata hai. Highly recommended!"
+            </p>
+            <div style="display:flex; align-items:center; gap:12px;">
+              <div style="width:40px; height:40px; border-radius:50%; background:var(--primary-100); color:var(--primary-800); display:flex; align-items:center; justify-content:center; font-weight:700;">PS</div>
+              <div>
+                <strong style="font-size:0.9rem;">Pooja Singhal</strong><br>
+                <small style="color:var(--text-muted);">Verified Buyer • Mumbai</small>
+              </div>
+            </div>
+          </div>
+
+          <div style="background:var(--surface-card); padding:24px; border-radius:var(--radius-md); border:1px solid var(--surface-border); box-shadow:var(--shadow-sm);">
+            <div style="color:var(--accent-warm); margin-bottom:8px; font-size:1.1rem;">★★★★★</div>
+            <p style="font-size:0.92rem; color:var(--text-body); margin-bottom:16px; line-height:1.5;">
+              "Dals bina polish ki hain, boil karne par jo natural fragrance aati hai wo market ki polished dal me kabhi nahi milti. Pure health package!"
+            </p>
+            <div style="display:flex; align-items:center; gap:12px;">
+              <div style="width:40px; height:40px; border-radius:50%; background:var(--primary-100); color:var(--primary-800); display:flex; align-items:center; justify-content:center; font-weight:700;">AK</div>
+              <div>
+                <strong style="font-size:0.9rem;">Anand Kulkarni</strong><br>
+                <small style="color:var(--text-muted);">Verified Buyer • Bengaluru</small>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section style="padding: 70px 0; background: var(--surface-card); border-top: 1px solid var(--surface-border);">
+      <div class="container" style="max-width: 800px;">
+        <div class="section-head">
+          <span class="section-tag">Aksar Puche Jane Wale Sawal</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+        </div>
+
+        <div style="display:flex; flex-direction:column; gap:16px;">
+          <details style="background:var(--surface-tint); padding:16px 20px; border-radius:var(--radius-md); border:1px solid var(--surface-border); cursor:pointer;">
+            <summary style="font-weight:700; color:var(--primary-900); font-size:0.98rem;">Kya aapka A2 Ghee 100% Gir Cow ka hai?</summary>
+            <p style="margin-top:10px; font-size:0.88rem; color:var(--text-body); line-height:1.5;">
+              Ji haan! Humara A2 Ghee certified indigenous Gir gaay ke curd se bilona method dwara banaya jata hai. Isme kisi bhi prakaar ka artificial essence ya milk powder nahi milaya jata.
+            </p>
+          </details>
+
+          <details style="background:var(--surface-tint); padding:16px 20px; border-radius:var(--radius-md); border:1px solid var(--surface-border); cursor:pointer;">
+            <summary style="font-weight:700; color:var(--primary-900); font-size:0.98rem;">Multigrain Atta me kaun-kaun se anaaj hain?</summary>
+            <p style="margin-top:10px; font-size:0.88rem; color:var(--text-body); line-height:1.5;">
+              Isme Desi Sharbati Gehun, Bajra, Jowar, Ragi, Jau (Barley), Oats aur Roasted Chana ka scientific ratio mix hota hai jo high-fiber aur low-glycemic hota hai.
+            </p>
+          </details>
+
+          <details style="background:var(--surface-tint); padding:16px 20px; border-radius:var(--radius-md); border:1px solid var(--surface-border); cursor:pointer;">
+            <summary style="font-weight:700; color:var(--primary-900); font-size:0.98rem;">Delivery kitne din me hoti hai?</summary>
+            <p style="margin-top:10px; font-size:0.88rem; color:var(--text-body); line-height:1.5;">
+              Hum poore Bharat (Pan-India) me deliver karte hain. Metro cities me 2-3 din aur anya shehron me 3-5 din me safe glass aur safe packaging ke sath parcel pahuchta hai.
+            </p>
+          </details>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Slide-out Cart Drawer -->
+  <div class="cart-drawer-overlay" id="cart-drawer-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-label="Aapka Shopping Cart">
+    
+    <div class="cart-header">
+      <h3><span>🛍️ Aapka Cart</span></h3>
+      <button type="button" class="close-cart-btn" id="close-cart-btn" aria-label="Close cart">✕</button>
+    </div>
+
+    <!-- Free Delivery Goal Bar -->
+    <div class="shipping-bar-box" id="shipping-bar-box">
+      <div class="shipping-bar-text" id="shipping-bar-text">Add ₹799 more to unlock FREE Express Delivery!</div>
+      <div class="shipping-progress-track">
+        <div class="shipping-progress-fill" id="shipping-progress-fill" style="width: 0%;"></div>
+      </div>
+    </div>
+
+    <!-- Cart Items Scroll List -->
+    <div class="cart-items-list" id="cart-items-list">
+      <!-- Populated dynamically -->
+    </div>
+
+    <!-- Empty State -->
+    <div class="cart-empty-state" id="cart-empty-state">
+      <div class="cart-empty-icon">🌾</div>
+      <h4 style="font-family:var(--font-heading); font-size:1.2rem; color:var(--primary-900); margin-bottom:8px;">Aapka cart khaali hai</h4>
+      <p style="font-size:0.85rem; margin-bottom:20px;">Shuddh desi ghee aur multigrain atta explore karein!</p>
+      <button class="btn-primary" onclick="closeCartDrawer(); location.href='#shop-now';">Browse Products</button>
+    </div>
+
+    <!-- Cart Footer & Checkout Button -->
+    <div class="cart-footer" id="cart-footer" style="display:none;">
+      
+      <!-- Coupon Box -->
+      <div class="coupon-row">
+        <input type="text" class="coupon-input" id="cart-coupon-input" placeholder="Coupon Code (e.g. SHUDDH10)">
+        <button class="apply-coupon-btn" onclick="handleApplyCoupon()">Apply</button>
+      </div>
+
+      <div class="cart-calc-row">
+        <span>Items Subtotal:</span>
+        <strong id="cart-subtotal">₹0</strong>
+      </div>
+      <div class="cart-calc-row" id="cart-discount-row" style="display:none; color:var(--badge-green);">
+        <span>Coupon Discount:</span>
+        <strong id="cart-discount">-₹0</strong>
+      </div>
+      <div class="cart-calc-row">
+        <span>Delivery Fee (Pan-India):</span>
+        <span id="cart-delivery">₹60</span>
+      </div>
+      <div class="cart-calc-row total">
+        <span>Kul Rashi (Total):</span>
+        <span id="cart-grand-total">₹0</span>
+      </div>
+
+      <button type="button" class="checkout-btn" onclick="openCheckoutModal()">
+        <span>🔒 Proceed to Secure Checkout</span>
+      </button>
+    </div>
+
+  </aside>
+
+  <!-- Quick View Modal -->
+  <div class="modal-overlay" id="quick-view-modal">
+    <div class="modal-card" style="max-width: 780px;">
+      <div class="modal-header">
+        <h3 id="quick-view-title">Product Details</h3>
+        <button class="modal-close-btn" onclick="closeModal('quick-view-modal')">✕</button>
+      </div>
+      <div class="modal-body" id="quick-view-body">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkout Modal -->
+  <div class="modal-overlay" id="checkout-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>Secure Checkout (सुरक्षित ऑर्डर)</h3>
+        <button class="modal-close-btn" onclick="closeModal('checkout-modal')">✕</button>
+      </div>
+      <div class="modal-body">
+        
+        <form id="checkout-form" onsubmit="submitOrder(event)">
+          
+          <div id="checkout-order-summary"></div>
+
+          <h4 style="font-size:0.95rem; font-weight:700; color:var(--primary-900); margin-bottom:12px;">1. Customer & Delivery Address</h4>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label">Aapka Pura Naam *</label>
+              <input type="text" id="checkout-name" class="form-input" placeholder="e.g. Ramesh Kumar" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">WhatsApp / Mobile No *</label>
+              <input type="tel" id="checkout-phone" class="form-input" placeholder="10-digit mobile number" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Email ID (for Invoice)</label>
+            <input type="email" id="checkout-email" class="form-input" placeholder="name@gmail.com">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Ghar / Flat No. & Street Address *</label>
+            <textarea id="checkout-address" class="form-textarea" rows="2" placeholder="House no, Building, Street, Landmark" required></textarea>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label class="form-label">Pincode (6 Digits) *</label>
+              <input type="text" id="checkout-pincode" class="form-input" placeholder="e.g. 110001" maxlength="6" oninput="handleCheckoutPincodeChange(this.value)" required>
+              <div id="checkout-pincode-status" style="font-size:0.75rem; margin-top:4px;"></div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">City / Shehar</label>
+              <input type="text" id="checkout-city" class="form-input" placeholder="Auto-detected or enter city">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">State / Rajya</label>
+            <input type="text" id="checkout-state" class="form-input" placeholder="State">
+          </div>
+
+          <h4 style="font-size:0.95rem; font-weight:700; color:var(--primary-900); margin-top:20px; margin-bottom:12px;">2. Payment Method (Online UPI / Cards)</h4>
+
+          <div class="payment-methods-grid">
+            <label class="payment-radio-box selected">
+              <input type="radio" name="paymentMethod" value="upi" checked>
+              <div>
+                <strong>Instant UPI / QR Code</strong><br>
+                <small style="color:var(--text-muted);">Google Pay, PhonePe, Paytm, BHIM</small>
+              </div>
+              <div class="upi-apps-icons">GPay • PhonePe • Paytm</div>
+            </label>
+
+            <label class="payment-radio-box">
+              <input type="radio" name="paymentMethod" value="card">
+              <div>
+                <strong>Debit / Credit Card & Netbanking</strong><br>
+                <small style="color:var(--text-muted);">Visa, MasterCard, RuPay, All Indian Banks</small>
+              </div>
+            </label>
+          </div>
+
+          <button type="submit" class="btn-primary" style="width:100%; justify-content:center; padding:15px; margin-top:12px;">
+            <span>Pay <strong id="checkout-pay-amount">₹0</strong> & Place Order</span>
+          </button>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Receipt / Tax Invoice Modal -->
+  <div class="modal-overlay" id="receipt-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>Order Receipt & Bill</h3>
+        <button class="modal-close-btn" onclick="closeModal('receipt-modal')">✕</button>
+      </div>
+      <div class="modal-body" id="receipt-body">
+        <!-- Rendered by openReceiptModal() -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Founder Admin Portal Modal -->
+  <div class="modal-overlay" id="admin-modal">
+    <div class="modal-card admin-modal-card">
+      <div class="modal-header">
+        <h3>🌱 Founder Store Manager (Admin Panel)</h3>
+        <button class="modal-close-btn" onclick="closeModal('admin-modal')">✕</button>
+      </div>
+      <div class="modal-body">
+        
+        <!-- Stats strip -->
+        <div class="admin-stats-grid">
+          <div class="admin-stat-card">
+            <span>Total Revenue</span>
+            <h3 id="admin-stat-revenue">₹0</h3>
+          </div>
+          <div class="admin-stat-card">
+            <span>Total Orders Placed</span>
+            <h3 id="admin-stat-orders">0</h3>
+          </div>
+          <div class="admin-stat-card">
+            <span>Active Products</span>
+            <h3 id="admin-stat-products">6</h3>
+          </div>
+        </div>
+
+        <!-- Navigation tabs -->
+        <div class="admin-tabs">
+          <button type="button" class="admin-tab active" id="tab-btn-products" onclick="switchAdminTab('products')">📦 Products & Stock</button>
+          <button type="button" class="admin-tab" id="tab-btn-orders" onclick="switchAdminTab('orders')">📋 Orders & Shipping</button>
+          <button type="button" class="admin-tab" id="tab-btn-add" onclick="switchAdminTab('add')">➕ Add New Product</button>
+          <button type="button" class="admin-tab" id="tab-btn-settings" onclick="switchAdminTab('settings')">⚙️ Store Settings</button>
+        </div>
+
+        <!-- Tab 1: Products Table -->
+        <div class="admin-tab-pane" id="tab-pane-products">
+          <div style="overflow-x:auto;">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Base Price</th>
+                  <th>Stock Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="admin-products-table-body">
+                <!-- Rendered dynamically -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Tab 2: Orders Table -->
+        <div class="admin-tab-pane" id="tab-pane-orders" style="display:none;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px;">
+            <p style="font-size:0.85rem; color:var(--text-muted); margin:0;">Real-time customer orders with delivery details.</p>
+            <button class="btn-primary" style="padding:6px 14px; font-size:0.8rem;" onclick="exportOrdersToCSV()">
+              📥 Export Orders to Excel / CSV
+            </button>
+          </div>
+          <div style="overflow-x:auto;">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Order ID</th>
+                  <th>Customer Info</th>
+                  <th>Items</th>
+                  <th>Total</th>
+                  <th>Status</th>
+                  <th>Invoice</th>
+                </tr>
+              </thead>
+              <tbody id="admin-orders-table-body">
+                <!-- Rendered dynamically -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Tab 3: Add New Product -->
+        <div class="admin-tab-pane" id="tab-pane-add" style="display:none;">
+          <form id="admin-add-product-form" onsubmit="handleAddNewProduct(event)">
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label">Product English Name *</label>
+                <input type="text" id="new-prod-name" class="form-input" placeholder="e.g. Organic Chana Sattu" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Hindi Name</label>
+                <input type="text" id="new-prod-hindi" class="form-input" placeholder="e.g. शुद्ध चना सत्तू">
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label">Category *</label>
+                <select id="new-prod-category" class="form-select">
+                  <option value="atta">Atta & Flours</option>
+                  <option value="ghee">Desi Ghee</option>
+                  <option value="pulses">Pulses & Dals</option>
+                  <option value="oils">Cold-Pressed Oils</option>
+                  <option value="sweeteners">Honey & Sweeteners</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Base Price (₹) *</label>
+                <input type="number" id="new-prod-price" class="form-input" placeholder="e.g. 150" required>
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label">Pack Size / Weight (e.g. 1 kg) *</label>
+                <input type="text" id="new-prod-weight" class="form-input" placeholder="e.g. 1 kg" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Product Image Path</label>
+                <input type="text" id="new-prod-image" class="form-input" placeholder="assets/images/multigrain-atta.jpg">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Product Description</label>
+              <textarea id="new-prod-desc" class="form-textarea" rows="2" placeholder="Tell customers about the quality and sourcing"></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary" style="padding:12px 24px;">Publish Product to Website</button>
+          </form>
+        </div>
+
+        <!-- Tab 4: Store Settings -->
+        <div class="admin-tab-pane" id="tab-pane-settings" style="display:none;">
+          <form onsubmit="saveStoreSettingsFromForm(event)">
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label">Brand / Store Name</label>
+                <input type="text" id="setting-store-name" class="form-input" placeholder="Prakriti Pure">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Customer Support Phone</label>
+                <input type="text" id="setting-phone" class="form-input" placeholder="+91 98765 43210">
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label class="form-label">WhatsApp Number (For Order Sync)</label>
+                <input type="text" id="setting-whatsapp" class="form-input" placeholder="919876543210 (Country code with number)">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Free Shipping Minimum Cart Value (₹)</label>
+                <input type="number" id="setting-free-shipping" class="form-input" placeholder="799">
+              </div>
+            </div>
+
+            <button type="submit" class="btn-primary" style="padding:12px 24px;">Save Settings</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-brand">
+          <h3 class="store-brand-name">Prakriti Pure</h3>
+          <p>
+            Humara sankalp hai har ghar tak shuddh, rasayan-mukt, aur khet se seedhe aane wala taaza anaj aur desi ghee pahunchana. Sehatmand Bharat ka aadhar.
+          </p>
+          <div class="fssai-badge">
+            <span>🛡️ FSSAI Lic. No: 10022051000124</span>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Hamare Products</h4>
+          <ul>
+            <li><a href="#shop-now">A2 Gir Cow Bilona Ghee</a></li>
+            <li><a href="#shop-now">Stone-Ground Multigrain Atta</a></li>
+            <li><a href="#shop-now">Traditional Khapli Wheat</a></li>
+            <li><a href="#shop-now">Unpolished Native Dals</a></li>
+            <li><a href="#shop-now">Wood-Pressed Yellow Mustard Oil</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Customer Care</h4>
+          <ul>
+            <li><a href="javascript:void(0)" onclick="promptCheckPincode()">Pincode Delivery Check</a></li>
+            <li><a href="#purity-story">Our Vedic Process</a></li>
+            <li><a href="javascript:void(0)" onclick="openCartDrawer()">View Shopping Cart</a></li>
+            <li><a href="https://wa.me/919876543210" target="_blank">WhatsApp Order Support</a></li>
+            <li><a href="javascript:void(0)" onclick="openAdminModal()">Founder Dashboard</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Safe & Secure</h4>
+          <p style="font-size:0.85rem; color:#CBD8D0; margin-bottom:12px;">
+            100% Secure Payment Gateways. UPI, RuPay, Google Pay, PhonePe, Cards supported.
+          </p>
+          <div style="font-size:1.4rem; display:flex; gap:10px;">
+            <span>💳</span><span>📱</span><span>🔒</span><span>🚚</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 <span class="store-brand-name">Prakriti Pure</span>. All Rights Reserved. Crafted for Purity & Good Health.</p>
+        <p>Pan-India Express Shipping • Safe Eco-Friendly Packaging</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/products-data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/admin.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
